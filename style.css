@@ -1,0 +1,34 @@
+* {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
+    background-color: green;
+
+}
+
+#col {
+    background-color: white;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    
+}
+
+#banner {
+    flex: 1.5;
+    margin: 0;
+}
+
+#sign-in {
+    background-color: gray;
+    flex: 2;
+    margin: 0;
+}
+
+.bannerimg {
+
+    background-image: url("sign-up-form\images\windmill.gif");
+    background-repeat:repeat;
+    background-position: center;
+}
