@@ -1,34 +1,44 @@
-* {
-    margin-left: 50px;
-    margin-right: 50px;
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
-    background-color: green;
-
+    background-color: rgb(41, 41, 41);
 }
 
-#col {
+.row {
+    height: 100vh;
     background-color: white;
     flex-direction: row;
     display: flex;
-    justify-content: center;
-    height: 90vh;
+
     
 }
 
-#banner {
-    flex: 1.5;
-    margin: 0;
+.banner {
+    flex: 1;
+    display: flex;
+
+   
+}
+.logo {
+    position: absolute;
+    align-self: center;
+    justify-content: center;
+}
+.ribben {
+    background-color: #888;
+    padding: 20px;
+}
+#logo {
+    width: 85px;
+    height: 141px;
 }
 
-#sign-in {
-    background-color: gray;
+.sign-in {
+    background-color: whitesmoke;
     flex: 2;
-    margin: 0;
 }
 
-.bannerimg {
 
-    background-image: url("sign-up-form\images\windmill.gif");
-    background-repeat:repeat;
-    background-position: center;
-}
