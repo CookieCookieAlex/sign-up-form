@@ -2,32 +2,71 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Sign-up</title>
 </head>
 
 <body>
-  <section class="row">
+  <div class="content">
     <div class="banner">
+      <img id="bannerimg" src="images\windmill.gif" alt="pixel art windmill" />
       <div class="ribbon">
-        <img id="logo" src="images\Daco_4530018.png" alt="logo">
-      </div>
-      <img id="bannerimg" src="images\windmill.gif" alt="pixel art windmill">
-    </div>
-    <div class="sign-in">
-      <div class="row">
-        <div class="box">Box 1</div>
-      </div>
-      <div class="row">
-        <div class="box">Box 2</div>
-      </div>
-      <div class="row">
-        <div class="box">Box 3</div>
+        <p>Whelcome to Thirsty Whale Tavern</p>
+        <img id="logo" src="images\Daco_4530018.png" alt="logo" />
       </div>
     </div>
-  </section>
+    
+    <div class="right-side">
+      <div class="right">
+        <div class="text-align">
+          <p>
+            This is not a real online service. Welcome to the Thirsty Whale
+            Tavern. We serv from the freshes of fish to the reddest of the
+            meat.
+          </p>
+          <p>Enjoy your stay and introduce yourself.</p>
+        </div>
+      </div>
+      <form class="form">
+        <div class="input">
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" id="first-name" required>
+        </div>
+
+        <div class="input">
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" id="last-name">
+        </div>
+
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="input">
+          <label for="phone-number">Phone number</label>
+          <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
+        </div>
+
+        <div class="input">
+          <label for="password">Password</label>
+          <input type="password" name="passwor" id="passwor" required>
+        </div>
+
+        <div class="input">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" name="confirm-password" id="confirm-password" required>
+        </div>
+
+
+      </form>
+      <div class="right">
+        <div class="left button"><button type="submit">Create Account</button></div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

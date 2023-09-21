@@ -1,79 +1,123 @@
-body {
-  margin: 0;
-  padding: 0 100px;
-  background-color: rgb(41, 41, 41);
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* everything */
+.content {
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.row {
-  flex: 1;
-  background-color: white;
+.content {
   display: flex;
-  align-items: stretch;
-  margin: 0;
+  height: 100vh;
+  flex-direction: row;
 }
+
+/* left side */
 
 .banner {
-  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+.ribbon {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 100%;
-}
-
-.ribbon {
-  background-color: rgba(128, 128, 128, 0.5);
-  padding: 20px;
+  position: absolute;  
+  top: 25%;
   width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  background-color: rgba(83, 83, 83, 0.185);
+  
 }
 
 #logo {
-  width: 85px;
-  height: 141px;
+  opacity: 0.9;
+  max-width: 100px;
+  height: auto;
+  margin: 5px ;
 }
 
-#bannerimg {
-  max-width: 100%;
-  height: 100%;
+.right-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Equally distribute space between columns */
+  margin: 20px;
 }
 
-.sign-in {
+.right {
   flex: 1;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin: 20px;
   align-items: center;
-  text-align: center;
-  padding: 20px;
-  margin: 0;
 }
 
-.row .box {
-  background-color: rgba(211, 211, 211, 0.5); /* Transparent gray background */
-  margin: 10px;
-  padding: 40px; /* Increased padding to inflate the boxes */
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+/* form */
+
+.form{
+ 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.row .box:first-child {
-  margin-top: 0;
+.input{
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  opacity: 50%;
 }
 
-.row .box:last-child {
-  margin-bottom: 0;
+.form-title{
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
 }
+
+input{
+
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 3px;
+}
+
+input:focus{
+  outline: none;
+  border: 2px solid var(--color);
+}
+
+button{
+  color: var(--color);
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid var(--color);
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 40px 0;
+}
+
+button:hover{
+  background-color: var(--color);
+  
+}
+
+.log-in{
+  display: flex;
+  gap: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 700;
+}
+
